@@ -12,7 +12,7 @@ module.exports = {
         peach: "#faac7c",
       },
       backgroundImage: {
-        "head-pattern": "url('/head.png')",
+        "head-pattern": "url('/head.PNG')",
         "world-map": "url('/world-map-flags.PNG')",
       },
       fontFamily: {
