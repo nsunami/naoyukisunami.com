@@ -1,16 +1,36 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+.tooltip {
+  @apply invisible absolute;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
 }
 
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Luthier";
+  src: url("../public/fonts/LuthierFF/Luthier-Regular.ttf");
+}
+
+@layer utilities {
+  .clip-to-hex {
+    clip-path: path(
+      "M 252.9 0 H 84.3 L 0 146 l 84.3 146 h 168.6 l 84.3 -146 Z"
+    );
+  }
 }
