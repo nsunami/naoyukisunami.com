@@ -324,7 +324,7 @@ export default function Home() {
             Work with me
           </h1>
           <div className="flex flex-col md:flex-row justify-between gap-11">
-            <div className="max-w-xl font-luthier text-3xl">
+            <div className="max-w-xl font-luthier text-3xl flex flex-col">
               <div>
                 I love <span className="text-orange-500">writing codes</span>{" "}
                 and{" "}
@@ -349,7 +349,7 @@ export default function Home() {
                 .
               </div>
               <div
-                className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 mt-24"
+                className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 mt-24 md:self-auto sm:flex hidden"
                 onClick={() => setIsOpen(true)}
               >
                 <Image src={Pointer} alt="A finger pressing a button" />
@@ -397,10 +397,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="absolute -right-36 top-10 z-auto -rotate-[100deg]">
             <Image src={Wave3} alt="wave" style={{ transform: "scaleX(-1)" }} />
           </div>
+        </div>
+        <div
+          className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 absolute -bottom-0 right-12 sm:hidden"
+          onClick={() => setIsOpen(true)}
+        >
+          <Image src={Pointer} alt="A finger pressing a button" />
         </div>
       </main>
       <footer className="flex flex-row justify-between items-center w-full font-luthier bg-zinc-900 text-orange-400 text-sm text-right flex-shrink py-1 px-4">
