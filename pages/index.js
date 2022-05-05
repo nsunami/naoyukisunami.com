@@ -38,6 +38,7 @@ import Podcast from "../public/podcast.png";
 import Petitions from "../public/petitions.png";
 import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
+import HeadImage from "../public/head.PNG";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,10 +132,13 @@ export default function Home() {
                   driving collaboration and equitable innovation.
                 </div>
               </div>
+              <div className="visible sm:hidden">
+                <Image src={HeadImage} alt="A picture of a head" />
             </div>
           </div>
         </div>
-        <div id="locations" className="w-2/3 mt-24">
+        </div>
+        <div id="locations" className="w-2/3 sm:mt-24 mt-44">
           <h1 className="font-grotesque text-4xl text-peach mt-6">
             I&apos;ve studied at
           </h1>
