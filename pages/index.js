@@ -25,7 +25,6 @@ import Frame from "../public/frame.gif";
 import Wave2 from "../public/wave2.svg";
 import Wave3 from "../public/wave3.svg";
 import Logo from "../public/logo.png";
-import Link from "next/link";
 import PostReviewLogo from "../public/postreview-logo.png";
 import { useRef, useState } from "react";
 import { Dialog } from "@headlessui/react";
