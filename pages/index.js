@@ -25,7 +25,6 @@ import Frame from "../public/frame.gif";
 import Wave2 from "../public/wave2.svg";
 import Wave3 from "../public/wave3.svg";
 import Logo from "../public/logo.png";
-import Link from "next/link";
 import PostReviewLogo from "../public/postreview-logo.png";
 import { useRef, useState } from "react";
 import { Dialog } from "@headlessui/react";
@@ -87,12 +86,12 @@ export default function Home() {
           <div id="name" className="">
             <div className="text-7xl font-shippori text-gray-100">角南直幸</div>
             <div
-              className="mt-4 text-3xl sm:text-4xl 
+              className="mt-4 text-2xl sm:text-4xl 
             font-notoserif text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50"
             >
               Naoyuki Sunami, Ph.D.
             </div>
-            <div className="text-md text-4xl sm:text-5xl font-grotesque">
+            <div className="text-md text-3xl sm:text-5xl font-grotesque">
               Behavioral Data Scientist
             </div>
             <button
