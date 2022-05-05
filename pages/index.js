@@ -38,6 +38,7 @@ import Podcast from "../public/podcast.png";
 import Petitions from "../public/petitions.png";
 import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
+import HeadImage from "../public/head.PNG";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -115,7 +116,7 @@ export default function Home() {
               About me
             </h1>
             <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom h-[25rem]">
-              <div className="h-96 w-full md:w-4/6">
+              <div className="sm:h-96 w-full md:w-4/6">
                 <div>
                   I am a behavioral data scientist with 8+ years of experience
                   with data about{" "}
@@ -131,10 +132,13 @@ export default function Home() {
                   driving collaboration and equitable innovation.
                 </div>
               </div>
+              <div className="visible sm:hidden">
+                <Image src={HeadImage} alt="A picture of a head" />
+              </div>
             </div>
           </div>
         </div>
-        <div id="locations" className="w-2/3 mt-24">
+        <div id="locations" className="w-2/3 sm:mt-24 mt-44">
           <h1 className="font-grotesque text-4xl text-peach mt-6">
             I&apos;ve studied at
           </h1>
@@ -202,7 +206,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="interests" className="w-2/3 mx-12 mt-12">
+        <div id="interests" className="w-2/3 mx-12 sm:mt-12 mt-24">
           <h1 className="font-grotesque text-4xl text-peach my-6">
             I&apos;m interested in
           </h1>
@@ -238,7 +242,7 @@ export default function Home() {
         <div
           id="projects"
           ref={projectsRef}
-          className="w-2/3 flex flex-col mx-12 mt-24 mb-44"
+          className="w-2/3 flex flex-col mx-12 sm:mt-24 mt-32 mb-44"
         >
           <h1 className="font-grotesque text-4xl text-peach my-6">
             I&apos;ve worked on
@@ -313,7 +317,7 @@ export default function Home() {
         </div>
         <div
           id="projects"
-          className="relative w-2/3 flex flex-col mx-12 mt-24 mb-44"
+          className="relative w-2/3 flex flex-col mx-12 sm:mt-24 mt-12 mb-44"
           ref={contactRef}
         >
           <h1 className="font-grotesque text-4xl text-peach my-6">
