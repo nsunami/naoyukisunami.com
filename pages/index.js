@@ -451,12 +451,12 @@ export default function Home() {
                   <h1 className="font-grotesque w-full">
                     Currently listening to:
                   </h1>
-                  <div className="text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
+                  <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
                     <a
                       href="https://www.earwolf.com/show/factually-with-adam-conover/"
                       rel="noreferrer"
                       target={"_blank"}
-                      className="hover:text-gray-400"
+                      className=" hover:text-gray-400 focus-visible:outline-none"
                     >
                       Factually! with Adam Conover
                     </a>
@@ -469,12 +469,12 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col w-full">
                   <h1 className="font-grotesque">Recently signed petition:</h1>
-                  <div className="text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
+                  <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
                     <a
                       href="https://act.colorofchange.org/sign/clemency_for_4000_elders/"
                       rel="noreferrer"
                       target={"_blank"}
-                      className="hover:text-gray-400"
+                      className="focus-visible:outline-none hover:text-gray-400"
                     >
                       Clemency for Elders
                     </a>
@@ -487,12 +487,12 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col w-full">
                   <h1 className="font-grotesque">State of mind:</h1>
-                  <div className="has-tooltip text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
+                  <div className="focus-visible:outline-none has-tooltip text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50 ">
                     <a
                       href="https://ko-fi.com/nsunami"
                       rel="noreferrer"
                       target={"_blank"}
-                      className="hover:text-gray-400"
+                      className="focus-visible:outline-none hover:text-gray-400"
                     >
                       Always caffeinated
                     </a>
