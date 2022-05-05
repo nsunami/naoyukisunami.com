@@ -5,6 +5,7 @@ import {
   AiFillUnlock,
   AiOutlineMail,
   AiOutlineTwitter,
+  AiFillCloseSquare,
 } from "react-icons/ai";
 import {
   SiRstudio,
@@ -435,8 +436,14 @@ export default function Home() {
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <Dialog.Panel className="bg-black text-white border-gray-500 border-2 p-12 rounded-md">
-            <div className="flex flex-col gap-6 text-3xl font-luthier md:w-[40rem] max-w-lg">
-              <div className="flex flex-row">
+            <div className="relative flex flex-col gap-6 text-3xl font-luthier md:w-[40rem] max-w-lg">
+              <div
+                className="absolute -top-9 -right-8 hover:cursor-pointer text-zinc-500 hover:text-zinc-700"
+                onClick={() => setIsOpen(false)}
+              >
+                <AiFillCloseSquare />
+              </div>
+              <div className="flex flex-row ">
                 <div className="w-10 mx-7">
                   <Image src={Podcast} alt={"An icon of Podcast"} />
                 </div>
