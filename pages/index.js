@@ -489,13 +489,18 @@ export default function Home() {
                     >
                       Always caffeinated
                     </a>
-
-                    <div className="flex flex-row items-center w-64 text-xl py-4 px-6 absolute tooltip bg-zinc-800 text-white -top-10 right-0">
-                      <div>You can buy me a cup at Kofi</div>
-                      <div className="w-12 h-12">
-                        <Image src={Coffee} alt="A cup of coffee" />
+                    <a
+                      href="https://ko-fi.com/nsunami"
+                      rel="noreferrer"
+                      target={"_blank"}
+                    >
+                      <div className="flex flex-row items-center w-64 text-xl py-4 px-6 absolute tooltip bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-white rounded-md -top-9 right-0">
+                        <div>You can buy me a cup at Kofi</div>
+                        <div className="w-12 h-12">
+                          <Image src={Coffee} alt="A cup of coffee" />
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
