@@ -159,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         <div id="locations" className="w-2/3 sm:mt-24 mt-44">
-          <h1 className="font-grotesque text-4xl text-peach mt-6">
+          <h1 className="font-grotesque text-4xl text-peach my-6">
             I&apos;ve studied at
           </h1>
           <div
@@ -227,7 +227,7 @@ export default function Home() {
           </div>
         </div>
         <div id="interests" className="w-2/3 mx-12 sm:mt-12 mt-24">
-          <h1 className="font-grotesque text-4xl text-peach my-6">
+          <h1 className="font-grotesque text-4xl text-peach my-8">
             I&apos;m interested in
           </h1>
           <div className="flex flex-row font-luthier items-center">
