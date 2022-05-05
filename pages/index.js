@@ -323,7 +323,7 @@ export default function Home() {
           <h1 className="font-grotesque text-4xl text-peach my-6">
             Work with me
           </h1>
-          <div className="flex flex-col md:flex-row justify-between gap-11">
+          <div className="flex flex-col md:flex-row justify-between gap-11 relative z-30">
             <div className="max-w-xl font-luthier text-3xl">
               <div>
                 I love <span className="text-orange-500">writing codes</span>{" "}
