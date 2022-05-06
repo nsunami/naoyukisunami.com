@@ -1,5 +1,4 @@
 import React from "react";
-import SocialImage from "../public/social-image.png";
 
 export const SocialMetadata = () => {
   return (
@@ -13,7 +12,7 @@ export const SocialMetadata = () => {
         content={"https://www.naoyukisunami.com/"}
         key="ogurl"
       />
-      <meta property="og:image" content={SocialImage} key="ogimage" />
+      <meta property="og:image" content={"/social-image.png"} key="ogimage" />
       <meta
         property="og:site_name"
         content={"Naoyuki Sunami"}
