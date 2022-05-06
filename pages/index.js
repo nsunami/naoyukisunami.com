@@ -91,7 +91,7 @@ export default function Home() {
           <div className="w-8 h-8">
             <Image src={Logo} alt="logo" />
           </div>
-          <div>
+          <div className="font-grotesque text-xl">
             <ul className="space-x-5">
               <li className="float-left hover:text-peach hover:cursor-pointer underline decoration-dotted">
                 <a onClick={scrollToAboutMe}>About</a>
