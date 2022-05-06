@@ -115,7 +115,7 @@ export default function Home() {
               className="mt-4 text-2xl sm:text-4xl 
             font-notoserif text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50"
             >
-              Naoyuki Sunami, Ph.D.
+              Naoyuki Sunami, PhD
             </div>
             <div className="text-md text-3xl sm:text-5xl font-grotesque">
               Behavioral Data Scientist
