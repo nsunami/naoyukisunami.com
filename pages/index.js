@@ -40,7 +40,7 @@ import Petitions from "../public/petitions.png";
 import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
 import HeadImage from "../public/head.PNG";
-import Trail from "../public/trail.PNG";
+import Trail from "../public/trail.png";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
