@@ -13,6 +13,7 @@ import {
   SiReact,
   SiJavascript,
   SiNextdotjs,
+  SiQualtrics,
 } from "react-icons/si";
 import {
   FaDatabase,
@@ -40,6 +41,7 @@ import Petitions from "../public/petitions.png";
 import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
 import HeadImage from "../public/head.PNG";
+import Trail from "../public/trail.png";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -269,19 +271,6 @@ export default function Home() {
           </h1>
           <div className="flex flex-col md:flex-row justify-center items-end place-self-center max-w-4xl flex-wrap gap-10 font-luthier">
             <Project
-              title={"Housing Voucher App"}
-              href="https://github.com/de-data-lab/voucher-eligibility"
-              imageSrc={Houses}
-              fromOrange={"from-orange-400"}
-            >
-              An R Shiny app showing how housing assistance in Delaware is
-              helping families in a housing crisis{" "}
-              <div className="text-right flex flex-row justify-end gap-2">
-                <SiRstudio className="inline mx-1" />{" "}
-                <SiPython className="inline" />
-              </div>
-            </Project>
-            <Project
               title={"PostReview"}
               href="https://github.com/nsunami/postreview-app"
               imageSrc={PostReviewLogo}
@@ -309,6 +298,32 @@ export default function Home() {
               </div>
             </Project>
             <Project
+              title={"People's Experience in a Local Trail"}
+              href="https://de-data-lab.github.io/deldot-survey/"
+              imageSrc={Trail}
+              fromOrange={"from-orange-600"}
+            >
+              I conducted an intercept survey to understand people&apos;
+              experience in a public trail
+              <div className="text-right flex flex-row justify-end gap-2">
+                <SiRstudio className="inline mx-1" />
+                <SiQualtrics className="inline" />
+              </div>
+            </Project>
+            <Project
+              title={"Housing Voucher App"}
+              href="https://github.com/de-data-lab/voucher-eligibility"
+              imageSrc={Houses}
+              fromOrange={"from-orange-400"}
+            >
+              An R Shiny app showing how housing assistance in Delaware is
+              helping families in a housing crisis{" "}
+              <div className="text-right flex flex-row justify-end gap-2">
+                <SiRstudio className="inline mx-1" />{" "}
+                <SiPython className="inline" />
+              </div>
+            </Project>
+            <Project
               title={"Belonging in Video Games"}
               href="https://github.com/nsunami/dissertation"
               imageSrc={Screen}
@@ -318,21 +333,24 @@ export default function Home() {
               with characters in video games
               <div className="text-right flex flex-row justify-end gap-2">
                 <SiRstudio className="inline mx-1" />
+                <SiQualtrics className="inline" />
               </div>
             </Project>
-            <a
-              className="place-self-center"
-              href="https://github.com/nsunami"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button
-                className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
-             hover:from-orange-500 hover:to-peach "
+            <div className="place-self-center w-64">
+              <a
+                className=""
+                href="https://github.com/nsunami"
+                rel="noreferrer"
+                target="_blank"
               >
-                More on GitHub <span className="font-serif">&rarr;</span>
-              </button>
-            </a>
+                <button
+                  className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
+             hover:from-orange-500 hover:to-peach "
+                >
+                  More on GitHub <span className="font-serif">&rarr;</span>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
         <div
