@@ -42,6 +42,7 @@ import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
 import HeadImage from "../public/head.PNG";
 import Trail from "../public/trail.png";
+import { SocialMetadata } from "../components/SocialMetadata";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,6 +80,7 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#000000" />
+        <SocialMetadata />
       </Head>
       <main className="flex flex-col flex-grow items-center relative overflow-hidden max-w-7xl">
         <div
