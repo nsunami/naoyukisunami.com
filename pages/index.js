@@ -303,7 +303,7 @@ export default function Home() {
               fromOrange={"from-orange-600"}
             >
               I conducted an intercept survey to understand people&apos;
-              experience in the public trail
+              experience in a public trail
               <div className="text-right flex flex-row justify-end gap-2">
                 <SiRstudio className="inline mx-1" />
               </div>
