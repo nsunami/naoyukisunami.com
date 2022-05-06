@@ -13,7 +13,7 @@ export const SocialMetadata = () => {
         content={"https://www.naoyukisunami.com/"}
         key="ogurl"
       />
-      <meta property="og:image" content={"/social-image.png"} key="ogimage" />
+      <meta property="og:image" content={"/social-image.jpg"} key="ogimage" />
       <meta
         property="og:site_name"
         content={"Naoyuki Sunami"}
