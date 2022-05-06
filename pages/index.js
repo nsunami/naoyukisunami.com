@@ -298,7 +298,7 @@ export default function Home() {
               </div>
             </Project>
             <Project
-              title={"People's Experience in the Trails"}
+              title={"People's Experience in a Local Trail"}
               href="https://de-data-lab.github.io/deldot-survey/"
               imageSrc={Trail}
               fromOrange={"from-orange-600"}
