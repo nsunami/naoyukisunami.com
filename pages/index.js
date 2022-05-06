@@ -13,6 +13,7 @@ import {
   SiReact,
   SiJavascript,
   SiNextdotjs,
+  SiQualtrics,
 } from "react-icons/si";
 import {
   FaDatabase,
@@ -306,6 +307,7 @@ export default function Home() {
               experience in a public trail
               <div className="text-right flex flex-row justify-end gap-2">
                 <SiRstudio className="inline mx-1" />
+                <SiQualtrics className="inline" />
               </div>
             </Project>
             <Project
@@ -331,6 +333,7 @@ export default function Home() {
               with characters in video games
               <div className="text-right flex flex-row justify-end gap-2">
                 <SiRstudio className="inline mx-1" />
+                <SiQualtrics className="inline" />
               </div>
             </Project>
             <div className="place-self-center w-64">
