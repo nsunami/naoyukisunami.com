@@ -24,6 +24,7 @@ import {
 import WorldMapCropped from "../public/world-map-flags-cropped.png";
 import ProfilePic from "../public/profile-hex.png";
 import Frame from "../public/frame.gif";
+import Wave1 from "../public/wave.svg";
 import Wave2 from "../public/wave2.svg";
 import Wave3 from "../public/wave3.svg";
 import Logo from "../public/logo.png";
@@ -42,6 +43,7 @@ import StateOfMind from "../public/state-of-mind.png";
 import Coffee from "../public/coffee.png";
 import HeadImage from "../public/head.PNG";
 import Trail from "../public/trail.png";
+import { SocialMetadata } from "../components/SocialMetadata";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,6 +81,7 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#000000" />
+        <SocialMetadata />
       </Head>
       <main className="flex flex-col flex-grow items-center relative overflow-hidden max-w-7xl">
         <div
@@ -88,7 +91,7 @@ export default function Home() {
           <div className="w-8 h-8">
             <Image src={Logo} alt="logo" />
           </div>
-          <div>
+          <div className="font-grotesque text-xl">
             <ul className="space-x-5">
               <li className="float-left hover:text-peach hover:cursor-pointer underline decoration-dotted">
                 <a onClick={scrollToAboutMe}>About</a>
@@ -112,7 +115,7 @@ export default function Home() {
               className="mt-4 text-2xl sm:text-4xl 
             font-notoserif text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50"
             >
-              Naoyuki Sunami, Ph.D.
+              Naoyuki Sunami, PhD
             </div>
             <div className="text-md text-3xl sm:text-5xl font-grotesque">
               Behavioral Data Scientist
@@ -126,7 +129,7 @@ export default function Home() {
             </button>
           </div>
           <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6 z-auto">
-            <Image src="/wave.svg" alt="wave" layout="fill" />
+            <Image src={Wave1} alt="wave" layout="fill" />
           </div>
         </div>
         <div className="flex flex-col items-center w-2/3">
