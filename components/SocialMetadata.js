@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const SocialMetadata = () => {
   return (
     <>
+      <meta name="description" content="Behavioral Data Scientist" />
+
       {/* Twitter */}
-      <meta name="twitter:card" content="summary" key="twcard" />
-      <meta name="twitter:creator" content={"@n_sunami"} key="twhandle" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="naoyukisunami.com" />
+      <meta property="twitter:url" content="https://www.naoyukisunami.com/" />
+      <meta name="twitter:title" content="Naoyuki Sunami's Portfolio" />
+      <meta name="twitter:description" content="Behavioral Data Scientist" />
+      <meta
+        name="twitter:image"
+        content="https://naoyukisunami.com/social-image.jpg"
+      />
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta
@@ -13,7 +22,11 @@ export const SocialMetadata = () => {
         content={"https://www.naoyukisunami.com/"}
         key="ogurl"
       />
-      <meta property="og:image" content={"/social-image.jpg"} key="ogimage" />
+      <meta
+        property="og:image"
+        content={"https://naoyukisunami.com/social-image.jpg"}
+        key="ogimage"
+      />
       <meta
         property="og:site_name"
         content={"Naoyuki Sunami"}
