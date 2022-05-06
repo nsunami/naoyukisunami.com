@@ -7,6 +7,7 @@ export const SocialMetadata = () => {
       <meta name="twitter:card" content="summary" key="twcard" />
       <meta name="twitter:creator" content={"@n_sunami"} key="twhandle" />
       {/* Open Graph */}
+      <meta property="og:type" content="website" />
       <meta
         property="og:url"
         content={"https://www.naoyukisunami.com/"}
