@@ -24,6 +24,7 @@ import {
 import WorldMapCropped from "../public/world-map-flags-cropped.png";
 import ProfilePic from "../public/profile-hex.png";
 import Frame from "../public/frame.gif";
+import Wave1 from "../public/wave.svg";
 import Wave2 from "../public/wave2.svg";
 import Wave3 from "../public/wave3.svg";
 import Logo from "../public/logo.png";
@@ -128,7 +129,7 @@ export default function Home() {
             </button>
           </div>
           <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6 z-auto">
-            <Image src="/wave.svg" alt="wave" layout="fill" />
+            <Image src={Wave1} alt="wave" layout="fill" />
           </div>
         </div>
         <div className="flex flex-col items-center w-2/3">
