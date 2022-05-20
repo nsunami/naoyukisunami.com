@@ -151,6 +151,11 @@ export default function Home() {
                   .
                 </div>
                 <div className="mt-8">
+                  Through my skills in data science, statistics, and
+                  programming, I&apos;ve helped nonprofits, advocacy groups, and
+                  government agencies to make decisions based on data.
+                </div>
+                <div className="mt-8">
                   I believe in the power of{" "}
                   <span className="text-orange-500">openness</span> and{" "}
                   <span className="text-orange-500">transparency</span> in
