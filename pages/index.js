@@ -140,7 +140,7 @@ export default function Home() {
             >
               About me
             </h1>
-            <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom h-[25rem]">
+            <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom">
               <div className="sm:h-96 w-full md:w-4/6">
                 <div>
                   I&apos;m a data expert/software dev with 8+ years of
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="locations" className="w-2/3 sm:mt-24 mt-44">
+        <div id="locations" className="w-2/3 sm:mt-24 mt-28">
           <h1 className="font-grotesque text-4xl text-peach my-6">
             I&apos;ve studied at
           </h1>
