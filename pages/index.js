@@ -118,7 +118,7 @@ export default function Home() {
               Naoyuki Sunami, PhD
             </div>
             <div className="text-md text-3xl sm:text-5xl font-grotesque">
-              Behavioral Data Scientist
+              Data Expert/Software Dev
             </div>
             <button
               className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
@@ -140,15 +140,20 @@ export default function Home() {
             >
               About me
             </h1>
-            <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom h-[25rem]">
+            <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom">
               <div className="sm:h-96 w-full md:w-4/6">
                 <div>
-                  I am a behavioral data scientist with 8+ years of experience
-                  with data about{" "}
+                  I&apos;m a data expert/software dev with 8+ years of
+                  experience with data about{" "}
                   <span className="text-orange-500">
                     people&apos;s behavior
                   </span>
                   .
+                </div>
+                <div className="mt-8">
+                  Through my skills in data science, statistics, and
+                  programming, I&apos;ve helped nonprofits, advocacy groups, and
+                  government agencies to make decisions based on data.
                 </div>
                 <div className="mt-8">
                   I believe in the power of{" "}
@@ -163,7 +168,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="locations" className="w-2/3 sm:mt-24 mt-44">
+        <div id="locations" className="w-2/3 sm:mt-24 mt-28">
           <h1 className="font-grotesque text-4xl text-peach my-6">
             I&apos;ve studied at
           </h1>
