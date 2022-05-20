@@ -143,8 +143,8 @@ export default function Home() {
             <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom h-[25rem]">
               <div className="sm:h-96 w-full md:w-4/6">
                 <div>
-                  I am a behavioral data scientist with 8+ years of experience
-                  with data about{" "}
+                  I&apos;m a data expert/software dev with 8+ years of
+                  experience with data about{" "}
                   <span className="text-orange-500">
                     people&apos;s behavior
                   </span>
