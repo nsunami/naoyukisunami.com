@@ -482,7 +482,7 @@ export default function Home() {
                   </h1>
                   <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
                     <a
-                      href="https://www.earwolf.com/show/factually-with-adam-conover/"
+                      href="https://podcasts.apple.com/us/podcast/factually-with-adam-conover/id1463460577"
                       rel="noreferrer"
                       target={"_blank"}
                       className=" hover:text-gray-400 focus-visible:outline-none"
