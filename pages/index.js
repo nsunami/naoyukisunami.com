@@ -242,8 +242,9 @@ export default function Home() {
               <div id="data" className="flex flex-row">
                 <FaDatabase className="text-orange-600 text-6xl" />
                 <div className="mx-4">
-                  Responsible use of data: How we can use them to create an
-                  equitable and sustainable future
+                  Improving Research infrastructure: How we can create
+                  sustainable research environments and processes for
+                  researchers and research support professionals
                 </div>
               </div>
               <div id="data" className="flex flex-row">
