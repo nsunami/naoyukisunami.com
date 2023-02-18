@@ -117,7 +117,7 @@ export default function Home() {
             >
               Naoyuki Sunami, PhD
             </div>
-            <div className="text-md text-3xl sm:text-5xl font-grotesque">
+            <div className="text-md text-3xl sm:text-5xl font-grotesque relative">
               Data Steward / Software Developer
             </div>
             <button
@@ -128,7 +128,7 @@ export default function Home() {
               Latest Projects <span className="font-serif">&rarr;</span>
             </button>
           </div>
-          <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6 z-auto">
+          <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6">
             <Image src={Wave1} alt="wave" layout="fill" />
           </div>
         </div>
