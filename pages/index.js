@@ -492,24 +492,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row">
-                <div className="w-12 mx-7">
-                  <Image src={Petitions} alt={"An icon of Podcast"} />
-                </div>
-                <div className="flex flex-col w-full">
-                  <h1 className="font-grotesque">Recently signed petition:</h1>
-                  <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
-                    <a
-                      href="https://act.colorofchange.org/sign/clemency_for_4000_elders/"
-                      rel="noreferrer"
-                      target={"_blank"}
-                      className="focus-visible:outline-none hover:text-gray-400"
-                    >
-                      Clemency for Elders
-                    </a>
-                  </div>
-                </div>
-              </div>
               <div className="flex flex-row relative">
                 <div className="w-12 mx-7">
                   <Image src={StateOfMind} alt={"An icon of Podcast"} />
