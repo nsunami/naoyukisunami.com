@@ -143,23 +143,17 @@ export default function Home() {
             <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom">
               <div className="sm:h-96 w-full md:w-4/6">
                 <div>
-                  I&apos;m a data expert/software dev with 8+ years of
-                  experience with data about{" "}
-                  <span className="text-orange-500">
-                    people&apos;s behavior
-                  </span>
-                  .
+                  I&apos;m currently working as a Research Data Steward at
+                  Erasmus University Rotterdam.
                 </div>
                 <div className="mt-8">
-                  Through my skills in data science, statistics, and
-                  programming, I&apos;ve helped nonprofits, advocacy groups, and
-                  government agencies to make decisions based on data.
+                  I&apos;m passionate about improving research infrastructure,
+                  and how I can use humane technology to help researchers and
+                  research support professionals.
                 </div>
                 <div className="mt-8">
-                  I believe in the power of{" "}
-                  <span className="text-orange-500">openness</span> and{" "}
-                  <span className="text-orange-500">transparency</span> in
-                  driving collaboration and equitable innovation.
+                  I believe in the power of openness, transparency, and
+                  cooperation to create an equitable society.
                 </div>
               </div>
               <div className="visible sm:hidden">
