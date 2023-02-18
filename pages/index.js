@@ -375,19 +375,8 @@ export default function Home() {
                 .
               </div>
               <div className="my-4">
-                I&apos;m always open to new opportunities and collaborations.
-              </div>
-              <div>
-                Send me an email or schedule a chat on{" "}
-                <a
-                  href="https://savvycal.com/nsunami/webchat"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="hover:text-peach underline decoration-dotted"
-                >
-                  SavvyCal
-                </a>
-                .
+                I&apos;m always open to new opportunities and collaborations—get
+                in touch if you are interested.
               </div>
               <div
                 className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 mt-24 md:self-auto sm:flex hidden"
