@@ -117,8 +117,8 @@ export default function Home() {
             >
               Naoyuki Sunami, PhD
             </div>
-            <div className="text-md text-3xl sm:text-5xl font-grotesque">
-              Data Expert/Software Dev
+            <div className="text-md text-3xl sm:text-5xl font-grotesque relative">
+              Data Steward / Software Developer
             </div>
             <button
               className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
@@ -128,7 +128,7 @@ export default function Home() {
               Latest Projects <span className="font-serif">&rarr;</span>
             </button>
           </div>
-          <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6 z-auto">
+          <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6">
             <Image src={Wave1} alt="wave" layout="fill" />
           </div>
         </div>
@@ -143,23 +143,17 @@ export default function Home() {
             <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom">
               <div className="sm:h-96 w-full md:w-4/6">
                 <div>
-                  I&apos;m a data expert/software dev with 8+ years of
-                  experience with data about{" "}
-                  <span className="text-orange-500">
-                    people&apos;s behavior
-                  </span>
-                  .
+                  I&apos;m currently working as a Research Data Steward at
+                  Erasmus University Rotterdam.
                 </div>
                 <div className="mt-8">
-                  Through my skills in data science, statistics, and
-                  programming, I&apos;ve helped nonprofits, advocacy groups, and
-                  government agencies to make decisions based on data.
+                  I&apos;m passionate about improving research infrastructure,
+                  and how I can use humane technology to help researchers and
+                  research support professionals.
                 </div>
                 <div className="mt-8">
-                  I believe in the power of{" "}
-                  <span className="text-orange-500">openness</span> and{" "}
-                  <span className="text-orange-500">transparency</span> in
-                  driving collaboration and equitable innovation.
+                  I believe in the power of openness, transparency, and
+                  cooperation to create an equitable society.
                 </div>
               </div>
               <div className="visible sm:hidden">
@@ -248,8 +242,9 @@ export default function Home() {
               <div id="data" className="flex flex-row">
                 <FaDatabase className="text-orange-600 text-6xl" />
                 <div className="mx-4">
-                  Responsible use of data: How we can use them to create an
-                  equitable and sustainable future
+                  Improving Research infrastructure: How we can create
+                  sustainable research environments and processes for
+                  researchers and research support professionals
                 </div>
               </div>
               <div id="data" className="flex flex-row">
@@ -380,19 +375,8 @@ export default function Home() {
                 .
               </div>
               <div className="my-4">
-                I&apos;m always open to new opportunities and collaborations.
-              </div>
-              <div>
-                Send me an email or schedule a chat on{" "}
-                <a
-                  href="https://savvycal.com/nsunami/webchat"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="hover:text-peach underline decoration-dotted"
-                >
-                  SavvyCal
-                </a>
-                .
+                I&apos;m always open to new opportunities and collaborations—get
+                in touch if you are interested.
               </div>
               <div
                 className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 mt-24 md:self-auto sm:flex hidden"
@@ -498,30 +482,12 @@ export default function Home() {
                   </h1>
                   <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
                     <a
-                      href="https://www.earwolf.com/show/factually-with-adam-conover/"
+                      href="https://podcasts.apple.com/us/podcast/factually-with-adam-conover/id1463460577"
                       rel="noreferrer"
                       target={"_blank"}
                       className=" hover:text-gray-400 focus-visible:outline-none"
                     >
                       Factually! with Adam Conover
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-row">
-                <div className="w-12 mx-7">
-                  <Image src={Petitions} alt={"An icon of Podcast"} />
-                </div>
-                <div className="flex flex-col w-full">
-                  <h1 className="font-grotesque">Recently signed petition:</h1>
-                  <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
-                    <a
-                      href="https://act.colorofchange.org/sign/clemency_for_4000_elders/"
-                      rel="noreferrer"
-                      target={"_blank"}
-                      className="focus-visible:outline-none hover:text-gray-400"
-                    >
-                      Clemency for Elders
                     </a>
                   </div>
                 </div>
