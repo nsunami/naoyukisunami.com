@@ -56,7 +56,7 @@ export default function Home() {
   const scrollToContact = () => contactRef.current.scrollIntoView();
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-black text-white">
+    <div className="flex min-h-screen flex-col items-center bg-black text-white">
       <Head>
         <title>Naoyuki Sunami</title>
         <meta name="description" content="Nami Sunami's website" />
@@ -83,23 +83,23 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <SocialMetadata />
       </Head>
-      <main className="flex flex-col flex-grow items-center relative overflow-hidden max-w-7xl">
+      <main className="relative flex max-w-7xl flex-grow flex-col items-center overflow-hidden">
         <div
           id="navbar"
-          className="flex flex-row justify-between w-full px-12 pt-6"
+          className="flex w-full flex-row justify-between px-12 pt-6"
         >
-          <div className="w-8 h-8">
+          <div className="h-8 w-8">
             <Image src={Logo} alt="logo" />
           </div>
           <div className="font-grotesque text-xl">
             <ul className="space-x-5">
-              <li className="float-left hover:text-peach hover:cursor-pointer underline decoration-dotted">
+              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
                 <a onClick={scrollToAboutMe}>About</a>
               </li>
-              <li className="float-left hover:text-peach hover:cursor-pointer underline decoration-dotted">
+              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
                 <a onClick={scrollToProjects}>Projects</a>
               </li>
-              <li className="float-left hover:text-peach hover:cursor-pointer underline decoration-dotted">
+              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
                 <a onClick={scrollToContact}>Contact</a>
               </li>
             </ul>
@@ -107,41 +107,41 @@ export default function Home() {
         </div>
         <div
           id="hero"
-          className="flex flex-col mt-32 whitespace-nowrap relative h-96 w-2/3"
+          className="relative mt-32 flex h-96 w-2/3 flex-col whitespace-nowrap"
         >
           <div id="name" className="">
-            <div className="text-7xl font-shippori text-gray-100">角南直幸</div>
+            <div className="font-shippori text-7xl text-gray-100">角南直幸</div>
             <div
-              className="mt-4 text-2xl sm:text-4xl 
-            font-notoserif text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50"
+              className="mt-4 bg-gradient-to-r from-orange-700 
+            to-orange-50 bg-clip-text font-notoserif text-2xl text-transparent sm:text-4xl"
             >
               Naoyuki Sunami, PhD
             </div>
-            <div className="text-md text-3xl sm:text-5xl font-grotesque relative">
+            <div className="text-md relative font-grotesque text-xl sm:text-5xl">
               Data Steward / Software Developer
             </div>
             <button
-              className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
+              className="mt-20 rounded-full border-2 px-6 pt-2 pb-3 font-grotesque text-2xl hover:bg-gradient-to-r
              hover:from-orange-500 hover:to-peach"
               onClick={scrollToProjects}
             >
               Latest Projects <span className="font-serif">&rarr;</span>
             </button>
           </div>
-          <div className="absolute h-96 w-3/4 -right-1/4 -top-20 -rotate-6">
+          <div className="absolute -right-1/4 -top-20 h-96 w-3/4 -rotate-6">
             <Image src={Wave1} alt="wave" layout="fill" />
           </div>
         </div>
-        <div className="flex flex-col items-center w-2/3">
+        <div className="flex w-2/3 flex-col items-center">
           <div id="about-me" className="mt-24">
             <h1
-              className="font-grotesque text-4xl text-peach my-6"
+              className="my-6 font-grotesque text-4xl text-peach"
               ref={aboutMeRef}
             >
               About me
             </h1>
-            <div className="text-2xl font-luthier z-10 sm:bg-head-pattern md:bg-cover bg-contain bg-center bg-no-repeat md:bg-right-bottom">
-              <div className="sm:h-96 w-full md:w-4/6">
+            <div className="z-10 bg-contain bg-center bg-no-repeat font-luthier text-2xl sm:bg-head-pattern md:bg-cover md:bg-right-bottom">
+              <div className="w-full sm:h-96 md:w-4/6">
                 <div>
                   I&apos;m currently working as a Research Data Steward at
                   Erasmus University Rotterdam.
@@ -162,31 +162,31 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="locations" className="w-2/3 sm:mt-24 mt-28">
-          <h1 className="font-grotesque text-4xl text-peach my-6">
+        <div id="locations" className="mt-28 w-2/3 sm:mt-24">
+          <h1 className="my-6 font-grotesque text-4xl text-peach">
             I&apos;ve studied at
           </h1>
           <div
             id="world-map"
-            className="hidden md:flex justify-center font-luthier"
+            className="hidden justify-center font-luthier md:flex"
           >
-            <div className="flex justify-center h-[30rem] mb-24 bg-world-map bg-[length:1400px] bg-no-repeat bg-center items-center">
+            <div className="mb-24 flex h-[30rem] items-center justify-center bg-world-map bg-[length:1400px] bg-center bg-no-repeat">
               <div id="fake-space-1" className="w-[8rem]"></div>
               <div className="has-tooltip flex flex-col items-center">
-                <div className="text-orange-400 tooltip bg-black bg-opacity-80 p-4 -mt-20 drop-shadow-xl">
+                <div className="tooltip -mt-20 bg-black bg-opacity-80 p-4 text-orange-400 drop-shadow-xl">
                   <div>Western Illinois University</div>
                   <div>M.S. Experimental Psychology</div>
                 </div>
-                <div className="cursor-pointer bg-slate-400 opacity-0 h-8 w-8 "></div>
+                <div className="h-8 w-8 cursor-pointer bg-slate-400 opacity-0 "></div>
                 <div className="h-24"></div>
               </div>
               <div id="fake-space-2" className="w-[0.0rem]"></div>
               <div className="has-tooltip">
-                <div className="text-orange-600 tooltip bg-black bg-opacity-80 p-4 -mt-5 ml-10">
+                <div className="tooltip -mt-5 ml-10 bg-black bg-opacity-80 p-4 text-orange-600">
                   <div>University of Delaware</div>
                   <div>Ph.D. Psychology</div>
                 </div>
-                <div className="cursor-pointer bg-slate-400 opacity-0 h-8 w-8">
+                <div className="h-8 w-8 cursor-pointer bg-slate-400 opacity-0">
                   Y
                 </div>
                 <div className="h-8"></div>
@@ -194,11 +194,11 @@ export default function Home() {
               <div id="fake2" className="w-[32rem]"></div>
               <div className="has-tooltip">
                 <div className="h-16"></div>
-                <div className="text-peach tooltip bg-black bg-opacity-80 p-4 -mt-5 ml-10">
+                <div className="tooltip -mt-5 ml-10 bg-black bg-opacity-80 p-4 text-peach">
                   <div>Saint Louis University</div>
                   <div>B.S. Psychology</div>
                 </div>
-                <div className="cursor-pointer bg-slate-400 opacity-0 h-8 w-8">
+                <div className="h-8 w-8 cursor-pointer bg-slate-400 opacity-0">
                   Z
                 </div>
               </div>
@@ -207,8 +207,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="mobile" className="md:hidden flex flex-col font-luthier">
-            <div className="h-[12rem] w-full relative">
+          <div id="mobile" className="flex flex-col font-luthier md:hidden">
+            <div className="relative h-[12rem] w-full">
               <Image
                 src={WorldMapCropped}
                 alt="world map"
@@ -216,31 +216,31 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
-            <div className="text-orange-400 bg-black bg-opacity-80 p-4 drop-shadow-xl">
+            <div className="bg-black bg-opacity-80 p-4 text-orange-400 drop-shadow-xl">
               <div>Western Illinois University</div>
               <div>M.S. Experimental Psychology</div>
             </div>
-            <div className="text-orange-600 bg-black bg-opacity-80 p-4 -mt-5 ml-10">
+            <div className="-mt-5 ml-10 bg-black bg-opacity-80 p-4 text-orange-600">
               <div>University of Delaware</div>
               <div>Ph.D. Psychology</div>
             </div>
-            <div className="text-peach bg-black bg-opacity-80 p-4 -mt-5 self-end">
+            <div className="-mt-5 self-end bg-black bg-opacity-80 p-4 text-peach">
               <div>Saint Louis University</div>
               <div>B.S. Psychology</div>
             </div>
           </div>
         </div>
-        <div id="interests" className="w-2/3 mx-12 sm:mt-12 mt-24">
-          <h1 className="font-grotesque text-4xl text-peach my-8">
+        <div id="interests" className="mx-12 mt-24 w-2/3 sm:mt-12">
+          <h1 className="my-8 font-grotesque text-4xl text-peach">
             I&apos;m interested in
           </h1>
-          <div className="flex flex-row font-luthier items-center">
-            <div className="hidden md:block rotate-120 my-12 mr-10">
+          <div className="flex flex-row items-center font-luthier">
+            <div className="my-12 mr-10 hidden rotate-120 md:block">
               <Image src={Wave2} alt="wave2" />
             </div>
             <div className="flex flex-col space-y-9 text-xl">
               <div id="data" className="flex flex-row">
-                <FaDatabase className="text-orange-600 text-6xl" />
+                <FaDatabase className="text-6xl text-orange-600" />
                 <div className="mx-4">
                   Improving Research infrastructure: How we can create
                   sustainable research environments and processes for
@@ -248,14 +248,14 @@ export default function Home() {
                 </div>
               </div>
               <div id="data" className="flex flex-row">
-                <FaCogs className="text-orange-500 text-6xl" />
+                <FaCogs className="text-6xl text-orange-500" />
                 <div className="mx-4">
                   Humane software engineering: How we can develop technology to
                   drive social impact for all
                 </div>
               </div>
               <div id="data" className="flex flex-row">
-                <AiFillUnlock className="text-peach text-7xl" />
+                <AiFillUnlock className="text-7xl text-peach" />
                 <div className="mx-4">
                   Openness and transparency: How we can learn from each other
                   and advance knowledge and solutions
@@ -267,12 +267,12 @@ export default function Home() {
         <div
           id="projects"
           ref={projectsRef}
-          className="w-2/3 flex flex-col mx-12 sm:mt-24 mt-32 mb-44"
+          className="mx-12 mt-32 mb-44 flex w-2/3 flex-col sm:mt-24"
         >
-          <h1 className="font-grotesque text-4xl text-peach my-6">
+          <h1 className="my-6 font-grotesque text-4xl text-peach">
             I&apos;ve worked on
           </h1>
-          <div className="flex flex-col md:flex-row justify-center items-end place-self-center max-w-4xl flex-wrap gap-10 font-luthier">
+          <div className="flex max-w-4xl flex-col flex-wrap items-end justify-center gap-10 place-self-center font-luthier md:flex-row">
             <Project
               title={"PostReview"}
               href="https://github.com/nsunami/postreview-app"
@@ -280,7 +280,7 @@ export default function Home() {
             >
               An app to help searching and posting reviews of published
               scientific articles
-              <div className="text-right flex flex-row justify-end gap-2">
+              <div className="flex flex-row justify-end gap-2 text-right">
                 <SiNextdotjs className="inline" />
                 <SiReact className="inline" />
                 <SiJavascript className="inline" />
@@ -294,7 +294,7 @@ export default function Home() {
             >
               I help maintain ResearchEquals, a platform that helps researches
               publish building blocks of research
-              <div className="text-right flex flex-row justify-end gap-2">
+              <div className="flex flex-row justify-end gap-2 text-right">
                 <SiNextdotjs className="inline" />
                 <SiReact className="inline" />
                 <SiJavascript className="inline" />
@@ -308,8 +308,8 @@ export default function Home() {
             >
               I conducted an intercept survey to understand people&apos;
               experience in a public trail
-              <div className="text-right flex flex-row justify-end gap-2">
-                <SiRstudio className="inline mx-1" />
+              <div className="flex flex-row justify-end gap-2 text-right">
+                <SiRstudio className="mx-1 inline" />
                 <SiQualtrics className="inline" />
               </div>
             </Project>
@@ -321,8 +321,8 @@ export default function Home() {
             >
               An R Shiny app showing how housing assistance in Delaware is
               helping families in a housing crisis{" "}
-              <div className="text-right flex flex-row justify-end gap-2">
-                <SiRstudio className="inline mx-1" />{" "}
+              <div className="flex flex-row justify-end gap-2 text-right">
+                <SiRstudio className="mx-1 inline" />{" "}
                 <SiPython className="inline" />
               </div>
             </Project>
@@ -334,12 +334,12 @@ export default function Home() {
             >
               A series of scientific studies examining how we feel connected
               with characters in video games
-              <div className="text-right flex flex-row justify-end gap-2">
-                <SiRstudio className="inline mx-1" />
+              <div className="flex flex-row justify-end gap-2 text-right">
+                <SiRstudio className="mx-1 inline" />
                 <SiQualtrics className="inline" />
               </div>
             </Project>
-            <div className="place-self-center w-64">
+            <div className="w-64 place-self-center">
               <a
                 className=""
                 href="https://github.com/nsunami"
@@ -347,7 +347,7 @@ export default function Home() {
                 target="_blank"
               >
                 <button
-                  className="mt-20 border-2 pt-2 pb-3 px-6 rounded-full font-grotesque text-2xl hover:bg-gradient-to-r
+                  className="mt-20 rounded-full border-2 px-6 pt-2 pb-3 font-grotesque text-2xl hover:bg-gradient-to-r
              hover:from-orange-500 hover:to-peach "
                 >
                   More on GitHub <span className="font-serif">&rarr;</span>
@@ -358,14 +358,14 @@ export default function Home() {
         </div>
         <div
           id="projects"
-          className="relative w-2/3 flex flex-col mx-12 sm:mt-24 mt-12 mb-44"
+          className="relative mx-12 mt-12 mb-44 flex w-2/3 flex-col sm:mt-24"
           ref={contactRef}
         >
-          <h1 className="font-grotesque text-4xl text-peach my-6">
+          <h1 className="my-6 font-grotesque text-4xl text-peach">
             Work with me
           </h1>
-          <div className="flex flex-col md:flex-row justify-between gap-11 relative z-30">
-            <div className="max-w-xl font-luthier text-3xl flex flex-col">
+          <div className="relative z-30 flex flex-col justify-between gap-11 md:flex-row">
+            <div className="flex max-w-xl flex-col font-luthier text-3xl">
               <div>
                 I love <span className="text-orange-500">writing codes</span>{" "}
                 and{" "}
@@ -379,14 +379,14 @@ export default function Home() {
                 in touch if you are interested.
               </div>
               <div
-                className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 mt-24 md:self-auto sm:flex hidden"
+                className="mt-24 hidden h-10 w-10 grayscale hover:cursor-pointer hover:grayscale-0 sm:flex md:self-auto"
                 onClick={() => setIsOpen(true)}
               >
                 <Image src={Pointer} alt="A finger pressing a button" />
               </div>
             </div>
-            <div className="relative flex flex-col items-center gap-5 z-30">
-              <div className="absolute w-[21rem] md:-left-4 -top-4">
+            <div className="relative z-30 flex flex-col items-center gap-5">
+              <div className="absolute -top-4 w-[21rem] md:-left-4">
                 <Image
                   src={Frame}
                   alt={"Frame"}
@@ -397,15 +397,15 @@ export default function Home() {
                 <Image src={ProfilePic} alt={"Nami Sunami's Profile Picture"} />
               </div>
               <div
-                className="text-4xl font-luthier text-transparent
-              bg-gradient-to-r bg-clip-text from-orange-700 
-              to-peach"
+                className="bg-gradient-to-r from-orange-700 to-peach
+              bg-clip-text font-luthier text-4xl 
+              text-transparent"
               >
                 <a href="mailto:nsunami@pm.me">nsunami@pm.me</a>
               </div>
               <div
                 id="social"
-                className="text-4xl flex flex-row items-center gap-5"
+                className="flex flex-row items-center gap-5 text-4xl"
               >
                 <a href="mailto:nsunami@pm.me">
                   <AiOutlineMail />
@@ -432,14 +432,14 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="w-10 h-10 hover:cursor-pointer grayscale hover:grayscale-0 absolute -bottom-0 right-12 sm:hidden"
+          className="absolute -bottom-0 right-12 h-10 w-10 grayscale hover:cursor-pointer hover:grayscale-0 sm:hidden"
           onClick={() => setIsOpen(true)}
         >
           <Image src={Pointer} alt="A finger pressing a button" />
         </div>
       </main>
-      <footer className="flex flex-row justify-between items-center w-full font-luthier bg-zinc-900 text-orange-400 text-sm text-right flex-shrink py-1 px-4">
-        <div className="flex flex-row gap-1 flex-shrink-0">
+      <footer className="flex w-full flex-shrink flex-row items-center justify-between bg-zinc-900 py-3 px-4 text-right font-luthier text-sm text-orange-400">
+        <div className="flex flex-row gap-1">
           Naoyuki Sunami {datetime.getFullYear()}
           <div className="">
             <a
@@ -452,9 +452,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="">
-          Website designed by Jazelle Maira R. Carillo, engineered by Nami
-          Sunami
+        <div>
+          <div>Design: Jazelle Maira R. Carillo</div>
+          <div>Engineering: Nami Sunami</div>
         </div>
       </footer>
       <Dialog
@@ -464,23 +464,23 @@ export default function Home() {
       >
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
-          <Dialog.Panel className="bg-black text-white border-gray-500 border-2 p-12 rounded-md">
-            <div className="relative flex flex-col gap-6 text-3xl font-luthier md:w-[40rem] max-w-lg">
+          <Dialog.Panel className="rounded-md border-2 border-gray-500 bg-black p-12 text-white">
+            <div className="relative flex max-w-lg flex-col gap-6 font-luthier text-3xl md:w-[40rem]">
               <div
-                className="absolute -top-9 -right-8 hover:cursor-pointer text-zinc-500 hover:text-zinc-700"
+                className="absolute -top-9 -right-8 text-zinc-500 hover:cursor-pointer hover:text-zinc-700"
                 onClick={() => setIsOpen(false)}
               >
                 <AiFillCloseSquare />
               </div>
               <div className="flex flex-row ">
-                <div className="w-10 mx-7">
+                <div className="mx-7 w-10">
                   <Image src={Podcast} alt={"An icon of Podcast"} />
                 </div>
-                <div className="flex flex-col w-full">
-                  <h1 className="font-grotesque w-full">
+                <div className="flex w-full flex-col">
+                  <h1 className="w-full font-grotesque">
                     Currently listening to:
                   </h1>
-                  <div className="focus-visible:outline-none text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50">
+                  <div className="mt-4 bg-gradient-to-r from-orange-700 to-orange-50 bg-clip-text text-center text-transparent focus-visible:outline-none">
                     <a
                       href="https://podcasts.apple.com/us/podcast/factually-with-adam-conover/id1463460577"
                       rel="noreferrer"
@@ -492,18 +492,18 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row relative">
-                <div className="w-12 mx-7">
+              <div className="relative flex flex-row">
+                <div className="mx-7 w-12">
                   <Image src={StateOfMind} alt={"An icon of Podcast"} />
                 </div>
-                <div className="flex flex-col w-full">
+                <div className="flex w-full flex-col">
                   <h1 className="font-grotesque">State of mind:</h1>
-                  <div className="focus-visible:outline-none has-tooltip text-center mt-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-50 ">
+                  <div className="has-tooltip mt-4 bg-gradient-to-r from-orange-700 to-orange-50 bg-clip-text text-center text-transparent focus-visible:outline-none ">
                     <a
                       href="https://ko-fi.com/nsunami"
                       rel="noreferrer"
                       target={"_blank"}
-                      className="focus-visible:outline-none hover:text-gray-400"
+                      className="hover:text-gray-400 focus-visible:outline-none"
                     >
                       Always caffeinated
                     </a>
@@ -512,9 +512,9 @@ export default function Home() {
                       rel="noreferrer"
                       target={"_blank"}
                     >
-                      <div className="flex flex-row items-center w-64 text-xl py-4 px-6 absolute tooltip bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-white rounded-md -top-9 right-0">
+                      <div className="tooltip absolute -top-9 right-0 flex w-64 flex-row items-center rounded-md bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 py-4 px-6 text-xl text-white">
                         <div>You can buy me a cup at Kofi</div>
-                        <div className="w-12 h-12">
+                        <div className="h-12 w-12">
                           <Image src={Coffee} alt="A cup of coffee" />
                         </div>
                       </div>
