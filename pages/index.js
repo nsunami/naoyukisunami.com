@@ -144,7 +144,7 @@ export default function Home() {
               <div className="w-full sm:h-96 md:w-4/6">
                 <div>
                   I&apos;m currently working as a Research Data Steward at
-                  Erasmus University Rotterdam.
+                  Eindhoven University of Technology.
                 </div>
                 <div className="mt-8">
                   I&apos;m passionate about improving research infrastructure,
