@@ -4,7 +4,6 @@ import {
   AiFillGithub,
   AiFillUnlock,
   AiOutlineMail,
-  AiOutlineTwitter,
   AiFillCloseSquare,
 } from "react-icons/ai"
 import {
@@ -20,6 +19,7 @@ import {
   FaCogs,
   FaCreativeCommonsBy,
   FaCreativeCommons,
+  FaMastodon,
 } from "react-icons/fa"
 import WorldMapCropped from "../public/world-map-flags-cropped.png"
 import ProfilePic from "../public/profile-hex.png"
@@ -418,11 +418,11 @@ export default function Home() {
                   <AiFillGithub />
                 </a>
                 <a
-                  href="https://twitter.com/n_sunami"
+                  href="https://akademienl.social/@nsunami"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <AiOutlineTwitter />
+                  <FaMastodon />
                 </a>
               </div>
             </div>
