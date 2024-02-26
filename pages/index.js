@@ -118,7 +118,7 @@ export default function Home() {
               Naoyuki Sunami, PhD
             </div>
             <div className="text-md relative font-grotesque text-xl sm:text-5xl">
-              Data Steward / Software Developer
+              Data Steward
             </div>
             <button
               className="mt-20 rounded-full border-2 px-6 pt-2 pb-3 font-grotesque text-2xl hover:bg-gradient-to-r
