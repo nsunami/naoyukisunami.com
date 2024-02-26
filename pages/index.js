@@ -1,12 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from "next/head"
+import Image from "next/image"
 import {
   AiFillGithub,
   AiFillUnlock,
   AiOutlineMail,
-  AiOutlineTwitter,
   AiFillCloseSquare,
-} from "react-icons/ai";
+} from "react-icons/ai"
 import {
   SiRstudio,
   SiPython,
@@ -14,46 +13,47 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiQualtrics,
-} from "react-icons/si";
+} from "react-icons/si"
 import {
   FaDatabase,
   FaCogs,
   FaCreativeCommonsBy,
   FaCreativeCommons,
-} from "react-icons/fa";
-import WorldMapCropped from "../public/world-map-flags-cropped.png";
-import ProfilePic from "../public/profile-hex.png";
-import Frame from "../public/frame.gif";
-import Wave1 from "../public/wave.svg";
-import Wave2 from "../public/wave2.svg";
-import Wave3 from "../public/wave3.svg";
-import Logo from "../public/logo.png";
-import PostReviewLogo from "../public/postreview-logo.png";
-import { useRef, useState } from "react";
-import { Dialog } from "@headlessui/react";
-import Houses from "../public/houses.png";
-import Screen from "../public/screen.png";
-import { Project } from "../components/Project";
-import ResearchEquals from "../public/research-equals.png";
-import { useRouter } from "next/router";
-import Pointer from "../public/pointer.png";
-import Podcast from "../public/podcast.png";
-import Petitions from "../public/petitions.png";
-import StateOfMind from "../public/state-of-mind.png";
-import Coffee from "../public/coffee.png";
-import HeadImage from "../public/head.PNG";
-import Trail from "../public/trail.png";
-import { SocialMetadata } from "../components/SocialMetadata";
+  FaMastodon,
+} from "react-icons/fa"
+import WorldMapCropped from "../public/world-map-flags-cropped.png"
+import ProfilePic from "../public/profile-hex.png"
+import Frame from "../public/frame.gif"
+import Wave1 from "../public/wave.svg"
+import Wave2 from "../public/wave2.svg"
+import Wave3 from "../public/wave3.svg"
+import Logo from "../public/logo.png"
+import PostReviewLogo from "../public/postreview-logo.png"
+import { useRef, useState } from "react"
+import { Dialog } from "@headlessui/react"
+import Houses from "../public/houses.png"
+import Screen from "../public/screen.png"
+import { Project } from "../components/Project"
+import ResearchEquals from "../public/research-equals.png"
+import { useRouter } from "next/router"
+import Pointer from "../public/pointer.png"
+import Podcast from "../public/podcast.png"
+import Petitions from "../public/petitions.png"
+import StateOfMind from "../public/state-of-mind.png"
+import Coffee from "../public/coffee.png"
+import HeadImage from "../public/head.PNG"
+import Trail from "../public/trail.png"
+import { SocialMetadata } from "../components/SocialMetadata"
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-  const datetime = new Date();
-  const projectsRef = useRef(null);
-  const aboutMeRef = useRef(null);
-  const contactRef = useRef(null);
-  const scrollToProjects = () => projectsRef.current.scrollIntoView();
-  const scrollToAboutMe = () => aboutMeRef.current.scrollIntoView();
-  const scrollToContact = () => contactRef.current.scrollIntoView();
+  const [isOpen, setIsOpen] = useState(false)
+  const datetime = new Date()
+  const projectsRef = useRef(null)
+  const aboutMeRef = useRef(null)
+  const contactRef = useRef(null)
+  const scrollToProjects = () => projectsRef.current.scrollIntoView()
+  const scrollToAboutMe = () => aboutMeRef.current.scrollIntoView()
+  const scrollToContact = () => contactRef.current.scrollIntoView()
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -118,7 +118,7 @@ export default function Home() {
               Naoyuki Sunami, PhD
             </div>
             <div className="text-md relative font-grotesque text-xl sm:text-5xl">
-              Data Steward / Software Developer
+              Data Steward
             </div>
             <button
               className="mt-20 rounded-full border-2 px-6 pt-2 pb-3 font-grotesque text-2xl hover:bg-gradient-to-r
@@ -144,7 +144,7 @@ export default function Home() {
               <div className="w-full sm:h-96 md:w-4/6">
                 <div>
                   I&apos;m currently working as a Research Data Steward at
-                  Erasmus University Rotterdam.
+                  Eindhoven University of Technology.
                 </div>
                 <div className="mt-8">
                   I&apos;m passionate about improving research infrastructure,
@@ -418,11 +418,11 @@ export default function Home() {
                   <AiFillGithub />
                 </a>
                 <a
-                  href="https://twitter.com/n_sunami"
+                  href="https://akademienl.social/@nsunami"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <AiOutlineTwitter />
+                  <FaMastodon />
                 </a>
               </div>
             </div>
@@ -527,5 +527,5 @@ export default function Home() {
         </div>
       </Dialog>
     </div>
-  );
+  )
 }
