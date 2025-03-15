@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-black text-white">
       <Head>
-        <title>Naoyuki Sunami</title>
+        <title>Nami Sunami</title>
         <meta name="description" content="Nami Sunami's website" />
         <link
           rel="apple-touch-icon"
@@ -417,7 +417,7 @@ export default function Home() {
       </main>
       <footer className="flex w-full flex-shrink flex-row items-center justify-between bg-zinc-900 py-3 px-4 text-right font-luthier text-sm text-orange-400">
         <div className="flex flex-row gap-1">
-          Naoyuki Sunami {datetime.getFullYear()}
+          Nami Sunami {datetime.getFullYear()}
           <div className="">
             <a
               href="https://creativecommons.org/licenses/by/4.0/"
