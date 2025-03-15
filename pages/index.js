@@ -94,6 +94,9 @@ export default function Home() {
           <div className="font-grotesque text-xl">
             <ul className="space-x-5">
               <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
+                <a href="https://blog.namisunami.com">Blog</a>
+              </li>
+              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
                 <a onClick={scrollToAboutMe}>About</a>
               </li>
               <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
