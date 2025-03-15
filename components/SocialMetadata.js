@@ -3,7 +3,7 @@ import React from "react"
 export const SocialMetadata = () => {
   const description = "Data Steward"
   const title = "Nami Sunami"
-  const ogImage = "/social-image.jpg"
+  const ogImage = "/og-image.jpg"
   return (
     <>
       <meta name="description" content={description} />
