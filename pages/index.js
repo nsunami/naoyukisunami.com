@@ -26,7 +26,6 @@ import ProfilePic from "../public/profile-hex.png"
 import Frame from "../public/frame.gif"
 import Wave2 from "../public/wave2.svg"
 import Wave3 from "../public/wave3.svg"
-import Logo from "../public/logo.png"
 import PostReviewLogo from "../public/postreview-logo.png"
 import { useRef, useState } from "react"
 import { Dialog } from "@headlessui/react"
@@ -34,16 +33,15 @@ import Houses from "../public/houses.png"
 import Screen from "../public/screen.png"
 import { Project } from "../components/Project"
 import ResearchEquals from "../public/research-equals.png"
-import { useRouter } from "next/router"
 import Pointer from "../public/pointer.png"
 import Podcast from "../public/podcast.png"
-import Petitions from "../public/petitions.png"
 import StateOfMind from "../public/state-of-mind.png"
 import Coffee from "../public/coffee.png"
 import HeadImage from "../public/head.PNG"
 import Trail from "../public/trail.png"
 import { SocialMetadata } from "../components/SocialMetadata"
 import { Hero } from "../components/Hero"
+import Nav from "../components/Nav"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,9 +49,6 @@ export default function Home() {
   const projectsRef = useRef(null)
   const aboutMeRef = useRef(null)
   const contactRef = useRef(null)
-  const scrollToProjects = () => projectsRef.current.scrollIntoView()
-  const scrollToAboutMe = () => aboutMeRef.current.scrollIntoView()
-  const scrollToContact = () => contactRef.current.scrollIntoView()
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -84,30 +79,23 @@ export default function Home() {
         <SocialMetadata />
       </Head>
       <main className="relative flex max-w-7xl flex-grow flex-col items-center overflow-hidden">
-        <div
-          id="navbar"
-          className="flex w-full flex-row justify-between px-12 pt-6"
-        >
-          <div className="h-8 w-8">
-            <Image src={Logo} alt="logo" />
-          </div>
-          <div className="font-grotesque text-xl">
-            <ul className="space-x-5">
-              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
-                <a href="https://blog.namisunami.com">Blog</a>
-              </li>
-              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
-                <a onClick={scrollToAboutMe}>About</a>
-              </li>
-              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
-                <a onClick={scrollToProjects}>Projects</a>
-              </li>
-              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
-                <a onClick={scrollToContact}>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Nav
+          navItems={[
+            { name: "Blog", url: "https://blog.namisunami.com" },
+            {
+              name: "About",
+              url: "#about-me",
+            },
+            {
+              name: "Projects",
+              url: "#projects",
+            },
+            {
+              name: "Contact",
+              url: "#contact",
+            },
+          ]}
+        />
         <Hero />
         <div className="flex w-2/3 flex-col items-center">
           <div id="about-me" className="mt-24">
@@ -334,7 +322,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          id="projects"
+          id="contact"
           className="relative mx-12 mt-12 mb-44 flex w-2/3 flex-col sm:mt-24"
           ref={contactRef}
         >
