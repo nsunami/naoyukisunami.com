@@ -14,7 +14,7 @@ export const Hero = () => {
           className="mt-4 bg-gradient-to-r from-orange-700 
     to-orange-50 bg-clip-text font-notoserif text-2xl text-transparent sm:text-4xl"
         >
-          Naoyuki Sunami, PhD
+          Nami Sunami, PhD
         </div>
         <div className="text-md relative font-grotesque text-xl sm:text-5xl">
           Data Steward
