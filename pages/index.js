@@ -24,7 +24,6 @@ import {
 import WorldMapCropped from "../public/world-map-flags-cropped.png"
 import ProfilePic from "../public/profile-hex.png"
 import Frame from "../public/frame.gif"
-import Wave1 from "../public/wave.svg"
 import Wave2 from "../public/wave2.svg"
 import Wave3 from "../public/wave3.svg"
 import Logo from "../public/logo.png"
@@ -44,6 +43,7 @@ import Coffee from "../public/coffee.png"
 import HeadImage from "../public/head.PNG"
 import Trail from "../public/trail.png"
 import { SocialMetadata } from "../components/SocialMetadata"
+import { Hero } from "../components/Hero"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -94,6 +94,9 @@ export default function Home() {
           <div className="font-grotesque text-xl">
             <ul className="space-x-5">
               <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
+                <a href="https://blog.namisunami.com">Blog</a>
+              </li>
+              <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
                 <a onClick={scrollToAboutMe}>About</a>
               </li>
               <li className="float-left underline decoration-dotted hover:cursor-pointer hover:text-peach">
@@ -105,33 +108,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div
-          id="hero"
-          className="relative mt-32 flex h-96 w-2/3 flex-col whitespace-nowrap"
-        >
-          <div id="name" className="">
-            <div className="font-shippori text-7xl text-gray-100">角南直幸</div>
-            <div
-              className="mt-4 bg-gradient-to-r from-orange-700 
-            to-orange-50 bg-clip-text font-notoserif text-2xl text-transparent sm:text-4xl"
-            >
-              Naoyuki Sunami, PhD
-            </div>
-            <div className="text-md relative font-grotesque text-xl sm:text-5xl">
-              Data Steward
-            </div>
-            <button
-              className="mt-20 rounded-full border-2 px-6 pt-2 pb-3 font-grotesque text-2xl hover:bg-gradient-to-r
-             hover:from-orange-500 hover:to-peach"
-              onClick={scrollToProjects}
-            >
-              Latest Projects <span className="font-serif">&rarr;</span>
-            </button>
-          </div>
-          <div className="absolute -right-1/4 -top-20 h-96 w-3/4 -rotate-6">
-            <Image src={Wave1} alt="wave" layout="fill" />
-          </div>
-        </div>
+        <Hero />
         <div className="flex w-2/3 flex-col items-center">
           <div id="about-me" className="mt-24">
             <h1
