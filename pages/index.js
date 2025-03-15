@@ -21,24 +21,23 @@ import {
   FaCreativeCommons,
   FaMastodon,
 } from "react-icons/fa"
-import WorldMapCropped from "../public/world-map-flags-cropped.png"
 import ProfilePic from "../public/profile-hex.png"
 import Frame from "../public/frame.gif"
 import Wave2 from "../public/wave2.svg"
 import Wave3 from "../public/wave3.svg"
-import PostReviewLogo from "../public/postreview-logo.png"
+import PostReviewLogo from "../public/postreview-logo.jpg"
 import { useState } from "react"
 import { Dialog } from "@headlessui/react"
-import Houses from "../public/houses.png"
-import Screen from "../public/screen.png"
+import Houses from "../public/houses.jpg"
+import Screen from "../public/screen.jpg"
 import { Project } from "../components/Project"
-import ResearchEquals from "../public/research-equals.png"
+import ResearchEquals from "../public/research-equals.jpg"
 import Pointer from "../public/pointer.png"
 import Podcast from "../public/podcast.png"
 import StateOfMind from "../public/state-of-mind.png"
 import Coffee from "../public/coffee.png"
 import HeadImage from "../public/head.PNG"
-import Trail from "../public/trail.png"
+import Trail from "../public/trail.jpg"
 import { SocialMetadata } from "../components/SocialMetadata"
 import { Hero } from "../components/Hero"
 import Nav from "../components/Nav"
@@ -167,14 +166,6 @@ export default function Home() {
             </div>
           </div>
           <div id="mobile" className="flex flex-col font-luthier md:hidden">
-            <div className="relative h-[12rem] w-full">
-              <Image
-                src={WorldMapCropped}
-                alt="world map"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
             <div className="bg-black bg-opacity-80 p-4 text-orange-400 drop-shadow-xl">
               <div>Western Illinois University</div>
               <div>M.S. Experimental Psychology</div>
