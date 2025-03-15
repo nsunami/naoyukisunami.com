@@ -21,7 +21,6 @@ import {
   FaCreativeCommons,
   FaMastodon,
 } from "react-icons/fa"
-import WorldMapCropped from "../public/world-map-flags-cropped.png"
 import ProfilePic from "../public/profile-hex.png"
 import Frame from "../public/frame.gif"
 import Wave2 from "../public/wave2.svg"
@@ -185,14 +184,6 @@ export default function Home() {
             </div>
           </div>
           <div id="mobile" className="flex flex-col font-luthier md:hidden">
-            <div className="relative h-[12rem] w-full">
-              <Image
-                src={WorldMapCropped}
-                alt="world map"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
             <div className="bg-black bg-opacity-80 p-4 text-orange-400 drop-shadow-xl">
               <div>Western Illinois University</div>
               <div>M.S. Experimental Psychology</div>
