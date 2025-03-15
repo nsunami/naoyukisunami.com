@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react"
 
 export const SocialMetadata = () => {
+  const description = "Data Steward"
+  const title = "Nami Sunami"
+  const ogImage = "social-image.jpg"
   return (
     <>
-      <meta name="description" content="Data Expert/Software Dev" />
+      <meta name="description" content={description} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="naoyukisunami.com" />
       <meta property="twitter:url" content="https://www.naoyukisunami.com/" />
-      <meta name="twitter:title" content="Naoyuki Sunami's Portfolio" />
-      <meta name="twitter:description" content="Data Expert/Software Dev" />
-      <meta
-        name="twitter:image"
-        content="https://naoyukisunami.com/social-image.jpg"
-      />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta
@@ -22,26 +22,10 @@ export const SocialMetadata = () => {
         content={"https://www.naoyukisunami.com/"}
         key="ogurl"
       />
-      <meta
-        property="og:image"
-        content={"https://naoyukisunami.com/social-image.jpg"}
-        key="ogimage"
-      />
-      <meta
-        property="og:site_name"
-        content={"Naoyuki Sunami"}
-        key="ogsitename"
-      />
-      <meta
-        property="og:title"
-        content={"Naoyuki Sunami's Portfolio"}
-        key="ogtitle"
-      />
-      <meta
-        property="og:description"
-        content={"Data Expert/Software Dev"}
-        key="ogdesc"
-      />
+      <meta property="og:image" content={ogImage} key="ogimage" />
+      <meta property="og:site_name" content={title} key="ogsitename" />
+      <meta property="og:title" content={title} key="ogtitle" />
+      <meta property="og:description" content={description} key="ogdesc" />
     </>
-  );
-};
+  )
+}
