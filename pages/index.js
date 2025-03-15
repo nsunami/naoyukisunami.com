@@ -27,7 +27,7 @@ import Frame from "../public/frame.gif"
 import Wave2 from "../public/wave2.svg"
 import Wave3 from "../public/wave3.svg"
 import PostReviewLogo from "../public/postreview-logo.png"
-import { useRef, useState } from "react"
+import { useState } from "react"
 import { Dialog } from "@headlessui/react"
 import Houses from "../public/houses.png"
 import Screen from "../public/screen.png"
@@ -46,9 +46,6 @@ import Nav from "../components/Nav"
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
   const datetime = new Date()
-  const projectsRef = useRef(null)
-  const aboutMeRef = useRef(null)
-  const contactRef = useRef(null)
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-black text-white">
@@ -99,10 +96,7 @@ export default function Home() {
         <Hero />
         <div className="flex w-2/3 flex-col items-center">
           <div id="about-me" className="mt-24">
-            <h1
-              className="my-6 font-grotesque text-4xl text-peach"
-              ref={aboutMeRef}
-            >
+            <h1 className="my-6 font-grotesque text-4xl text-peach">
               About me
             </h1>
             <div className="z-10 bg-contain bg-center bg-no-repeat font-luthier text-2xl sm:bg-head-pattern md:bg-cover md:bg-right-bottom">
@@ -231,7 +225,6 @@ export default function Home() {
         </div>
         <div
           id="projects"
-          ref={projectsRef}
           className="mx-12 mt-32 mb-44 flex w-2/3 flex-col sm:mt-24"
         >
           <h1 className="my-6 font-grotesque text-4xl text-peach">
@@ -324,7 +317,6 @@ export default function Home() {
         <div
           id="contact"
           className="relative mx-12 mt-12 mb-44 flex w-2/3 flex-col sm:mt-24"
-          ref={contactRef}
         >
           <h1 className="my-6 font-grotesque text-4xl text-peach">
             Work with me
