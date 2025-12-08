@@ -73,6 +73,11 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#000000" />
         <SocialMetadata />
+        <script
+          defer
+          src="https://umami.namisunami.com/script.js"
+          data-website-id="be6c1e0d-9863-4ebf-a23b-b6e76cc645ce"
+        ></script>
       </Head>
       <main className="relative flex max-w-7xl flex-grow flex-col items-center overflow-hidden">
         <Nav
